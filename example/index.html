@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Average Color</title>
+		<script type="text/javascript" src="../js/jquery-latest.js"></script>
+		<script type="text/javascript" src="../js/jquery.average-color.js"></script>
+		<style>
+			div {
+				width: 100%; height: auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="example1">
+			<img id="mona-lisa" src="../img/mona-lisa.jpg" alt="mona lisa"/>
+		</div>
+		<div id="example2">
+			<img id="tiger" src="../img/tiger.jpg" alt="tiger" />
+		</div>
+		<div id="example3">
+			<img id="nature" src="../img/nature.jpg" alt="nature" />
+		</div>
+		<script>
+		$(window).load(function() {
+			// example 1 by calling the function
+			var color = averageColor("../img/mona-lisa.jpg");
+			$("#example1").css("background", color);
+			
+			// example 2 using the jquery plugin
+			var color2 = $("#tiger").averageColor();
+			$("#example2").css("background", color2);
+			
+			var color2 = $("#nature").averageColor();
+			$("#example3").css("background", color2);
+		});
+		</script>
+	</body>
+</html>
