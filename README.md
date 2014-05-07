@@ -37,4 +37,4 @@ It is also possible to get the average color without using the Jquery plugin.
 ```
 License
 =======
-GOCSS Parser Copyright 2014 Mourad Sabour, mourad.sabour[at]gmail.com.
+Jquery Average-color Copyright 2014 Mourad Sabour, mourad.sabour[at]gmail.com.
